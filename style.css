@@ -59,7 +59,7 @@ video{
 #page1 h1::before{
     content: "INDIA AND IT'S BEAUTY";
     position:absolute;
-    color: white;
+    color: black;
     top: -4px;
     left: -4px;
     -webkit-text-stroke: 3px #DFFF00;
