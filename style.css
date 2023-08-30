@@ -157,3 +157,7 @@ video{
     left: 75%;
     rotate: 180deg;
 }
+
+#page3{
+    height: 100dvh;
+}

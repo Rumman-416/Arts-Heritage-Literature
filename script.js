@@ -23,3 +23,29 @@ gsap.to("#main",{
         scrub:2
     }
 })
+
+gsap.from("#quote1",{
+    y:-70,
+    x:-70,
+    scrollTrigger:{
+        trigger:"#quote1",
+        scroller:"body",
+        //markers:true,
+        start:"top 35%",
+        end:"top 55%",
+        scrub:3
+    }
+})
+
+gsap.from("#quote2",{
+    y:70,
+    x:70,
+    scrollTrigger:{
+        trigger:"#quote2",
+        scroller:"body",
+        //markers:true,
+        start:"top 105%",
+        end:"top 85%",
+        scrub:3
+    }
+})
