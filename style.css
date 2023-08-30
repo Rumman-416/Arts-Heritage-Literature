@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    top:0;
+    height: 80px;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0 150px;
+    position: fixed;
+    z-index: 999;
+}
+#nav a{
+    text-decoration: none;
+    color: #FFCC00;
+}
+
+video{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page1{
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    
+}
+#page1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: #FFCC00;
+    position: relative;
+}
+#page1 h1::before{
+    content: "INDIA AND IT'S BEAUTY";
+    position:absolute;
+    color: white;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 3px #DFFF00;
+    z-index: -1;
+}
+#page1 h3{
+    font-weight: 900;
+    font-size: 25px;
+    color: #FFCC00;
+}
+#page1 p{
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    color: WHITE;
+}
+#page2{
+    min-height: 100dvh;
+    width: 100%;
+    z-index: 10;
+}
+#scroller{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    -webkit-text-stroke:4px #FFCC00;
+    transition: all linear 0.5s;
+}
+#scroller h4:hover{
+    color: #FFCC00;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
