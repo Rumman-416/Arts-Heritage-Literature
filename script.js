@@ -1,3 +1,5 @@
+//git push --set-upstream origin master
+
 gsap.to("#nav",{
     backgroundColor:"white",
     height:"70px",
