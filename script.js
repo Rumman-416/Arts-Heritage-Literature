@@ -17,7 +17,7 @@ gsap.to("#nav",{
 gsap.to("#main",{
     backgroundColor:"white",
     scrollTrigger:{
-        trigger:"main",
+        trigger:"#main",
         scroller:"body",
         //markers:"true",
         start:"top -20%",
@@ -60,4 +60,19 @@ for(let i=0; i<clip.length;i++){
     clip[i].addEventListener('mouseout',function(e){
         clip[i].pause()
     })
+}
+
+const slides = document.querySelectorAll(".slide")
+var counter =0
+slides.forEach(
+    (slide,index)=>{
+        slide.style.left=`${index*100}%`
+    }
+)
+const slideImage=()=>{
+    slides.forEach(
+        (slide)=>{
+            slide.style.transform=`translateX(-${counter*100}%)`
+        }
+    )
 }
