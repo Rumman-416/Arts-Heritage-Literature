@@ -27,8 +27,8 @@ gsap.to("#main",{
 })
 
 gsap.from("#quote1",{
-    y:-70,
-    x:-70,
+    y:-40,
+    x:-40,
     scrollTrigger:{
         trigger:"#quote1",
         scroller:"body",
@@ -40,13 +40,13 @@ gsap.from("#quote1",{
 })
 
 gsap.from("#quote2",{
-    y:70,
-    x:70,
+    y:40,
+    x:40,
     scrollTrigger:{
         trigger:"#quote2",
         scroller:"body",
         //markers:true,
-        start:"top 105%",
+        start:"top 75%",
         end:"top 85%",
         scrub:3
     }
@@ -69,6 +69,26 @@ slides.forEach(
         slide.style.left=`${index*100}%`
     }
 )
+const goPrev = () => {
+    if (counter == 0) {
+        counter = slides.length - 1;
+        slideImage();
+    } else {
+        counter--;
+        slideImage();
+    }
+}
+
+const goNext = () => {
+    if (counter == slides.length - 1) {
+        counter = 0;
+        slideImage();
+    } else {
+        counter++;
+        slideImage();
+    }
+}
+
 const slideImage=()=>{
     slides.forEach(
         (slide)=>{
