@@ -100,7 +100,7 @@ video{
     display: inline-block;
     white-space: nowrap;
     animation-name: scroll;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -127,6 +127,67 @@ video{
         transform:translateX(-100%);
     }
 }
+
+#cardContainer{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+    margin-top: 6%;
+}
+#cardContainer .card{
+    background-color: #FFCC00;
+    height:80%;
+    width:24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 1.2s ; 
+}
+
+.card1{
+    background-image: url(images/card1.png);
+}
+.card2{
+    background-image: url(images/card2.jfif);
+}
+.card3{
+    background-image: url(images/card3.jpg);
+}
+
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #FFCC00;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all ease 0.8s;
+  }
+  .card:hover .overlay{
+    opacity: 1;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+  }
+  .overlay h4{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+    
+  }
+  .overlay p{
+    color: black;
+  }
 
 #text{
     padding-top: 10%;
@@ -161,4 +222,42 @@ video{
 
 #page3{
     height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page3 #HighlightContainer{
+    height: 55dvh;
+    width: 80%;
+    background: linear-gradient(to left bottom,#FFCC00,#FFDF00);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+#highlights h1{
+    width: 45%;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: Brown;
+    margin-left: 20%;
+}
+
+#highlights p{
+    margin-top: 25px;
+    width: 45%;
+    margin-left: 20%;
+}
+
+#highlight-video{
+    width: 100%;
+    height: 50dvh;
+    margin-right: 10%;
+}
+#highlight-video video{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    border-radius: 15px;
 }
