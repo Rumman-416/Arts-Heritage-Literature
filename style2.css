@@ -1,38 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#mainbody{
+    width: 100%;
+}
 
-#main{
+#contenthead{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 40dvh;
+    gap: 2.5%;
+}
+
+ #contenthead h1{
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFCC00;
+    font-size: 8dvw;
+    text-transform: uppercase;
+    font-family: monospace;   
+}
+ #contenthead h1:hover {
+    color: #FFCC00;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    width: 100%;
+}
+#content h4{
+    width: 60%;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100dvh;
+    /* top: 15dvw; */
 }
 #fimages{
     display: flex;
     margin-top: 10%;
     height: 100vh;
     width:80%;
-    justify-content: space-between;
+    justify-content:space-around;
     /* border: 2px solid red; */
 }
 #fLeft{
     overflow: hidden;
-    width: 45%;
+    width: 40%;
     height: inherit;
-    border: 1px solid blue;
 }
 .fleftlm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: inherit;
-    background: #000;
-    color: #fff;
+}
+.fleftlm h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+    color: #FFCC00;
+}
+.fleftlm h2{
+    font-size: 2vw;
+    font-weight: 400;
+    
 }
 #fRight{
-    width: 45%;
+    width: 40%;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* border: 1px solid green; */
+    margin-top: 5dvh;
 }
 #fRight .images{
-    width: 90%;
+    width: 80%;
     height: 90%;
-    background: red;
+}
+/* #fRight .images img{
+    object-fit:none;
+} */
+
+#try{
+    min-height:350dvh ;
 }

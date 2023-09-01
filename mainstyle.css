@@ -24,3 +24,34 @@ body{
     text-decoration: none;
     color: #FFCC00;
 }
+#nav img{
+    margin: 25px 0 0 55%;
+    height: 160px;
+}
+footer{
+    height: 45dvh;
+    background-color: #000;
+    color: #FFCC00;
+    position: relative;
+    bottom: -154px;
+}
+#footercontent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#footercontent img{
+    height: 250px;
+}
+
+#content2 a{
+    text-decoration: none;
+    color: #FFCC00;
+}
+#content2  img{
+    height: 15px;
+}
+
+#content3 p{
+    margin: 0 0 0 40%;
+}
