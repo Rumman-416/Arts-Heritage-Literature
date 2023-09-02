@@ -336,7 +336,7 @@ video{
     top: 120px;
     rotate: 180deg;
 }
-footer{
+#about{
     min-height: 36dvh;
     background-color: #000;
     color: #FFCC00;

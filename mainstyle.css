@@ -22,28 +22,32 @@ body{
 }
 #nav a{
     text-decoration: none;
-    color: #FFCC00;
+    color: #3EB489;
 }
 #nav img{
     margin: 25px 0 0 55%;
     height: 160px;
 }
-footer{
-    height: 45dvh;
+#about{
+    min-height: 36dvh;
     background-color: #000;
     color: #FFCC00;
     position: relative;
-    bottom: -154px;
+    bottom: -153px;
 }
 #footercontent{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    height: 28dvh;
 }
 #footercontent img{
+    margin-top: 10px;
     height: 250px;
 }
-
+#content1{
+    margin-left: -4%;
+}
 #content2 a{
     text-decoration: none;
     color: #FFCC00;
