@@ -3,13 +3,16 @@
     padding: 0;    
     font-family: 'Josefin Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth ;
+}
 body{
     height: 100%;
     width: 100%;
 }
 #nav{
     top:0;
-    height: 80px;
+    height: 90px;
     width: 100%;
     text-transform: uppercase;
     display: flex;
@@ -26,7 +29,7 @@ body{
 
 #nav img{
     margin: 25px 0 0 42%;
-    height: 160px;
+    height: 140px;
 }
 
 video{
@@ -365,4 +368,77 @@ video{
 
 #content3 p{
     margin: 0 0 0 40%;
+}
+
+@media only screen and (max-width:1602px){
+    #page1 h1{
+        font-size: 100px;
+    }
+    #page1 h3{
+        font-size: 40px;
+    }
+    #page1 p{
+        width: 70%;
+        font-size: 25px;
+    }
+    .overlay h4{
+        font-size: 55px;
+    }
+    .overlay p{
+        font-size: 25px;
+    }
+    #page4 #statement h1 {
+        font-size: 40px;
+    }
+    #page4 #statement p {
+        font-size: 26px;
+    }
+    #container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .arrowLeft{
+        left: -30%;
+        top: 35%;
+        font-size: 100px;
+    }
+    .arrowRight{
+        right: -30%;
+        bottom: 30%;
+        font-size: 100px;
+    }
+    #content{
+        text-align: center;
+    }
+    #content p{
+        font-size: 20px;
+    }
+    #page5{
+        height: 40dvh;
+    }
+    #highlights h1{
+        font-size: 50px;
+        width: 100%;
+        margin-left:0;
+    }
+    #highlights p{
+        font-size: 27px;
+        width: 90%;
+        margin-left: 3%;
+    }
+    #text p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:1324px){
+    #page3 #HighlightContainer {
+        flex-direction: column-reverse;
+    }
+    #highlight-video {
+        width: 38%;
+        height: 50dvh;
+         margin-right: 0; 
+         margin-bottom: 25px;
+    }
 }
