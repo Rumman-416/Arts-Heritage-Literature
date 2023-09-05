@@ -153,3 +153,38 @@ html, body
   {
     flex-direction: row-reverse;
   }
+
+  @media (max-width:600px)
+  {
+    .intro
+    {
+        width: 75vmax;
+        margin-left: 10vmax;
+    }
+    .intro p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+    }
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vh;
+    }
+    .content .w-img
+    {
+        width:70vmax;
+    }
+    .content .psg h1
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .content .psg
+    {
+        width: 80vmax;
+        font-size: 3vh;
+    }
+  }

@@ -81,6 +81,7 @@ body{
     }
 }
 @media only screen and (max-width:768px){
+
     #nav img {
         right: -8rem;
     }
@@ -88,9 +89,40 @@ body{
     #fRight .images{
         height: 80%;
     }
-    #about{
-        height: 40dvh;
-        bottom: -9rem;
-    }
 
+    #content1 h3{
+        font-size: 1rem
+    }
+    #content3 p {
+        margin: 1rem 0 0px 15rem;
+    }
+}
+
+@media only screen and (max-width:426px){
+    #nav{
+        height: 3rem;
+        gap: 0.7rem;
+    }
+    #nav a{
+        font-size: 0.6rem;
+    }
+    #flogo{
+        height: 7rem;
+    }
+    #footercontent{
+        gap: 2rem;
+    }
+    #flogo{
+        margin-top: 0;
+    }
+    #content1 h3{
+        font-size: 0.7rem;
+    }
+    #content2 h3 {
+        font-size: 0.7rem;
+    }
+    #content3 p {
+        font-size: 0.8rem;
+        margin: 1rem 0 0px 6rem;
+    }
 }

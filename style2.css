@@ -172,5 +172,56 @@ html{
     #fRight .images{
         height: 80%;
     }
+    #morecontent{
+        margin: 0 0 0 4rem;
+    }
+    #endpg .pg {
+        height: 14rem;
+        width: 18rem;
+    }
+    #leftp{
+        position: relative;
+        left: 3rem;
+    }
+    #rightp{
+        position: relative;
+        right: 3rem;
+    }
 
+}
+@media only screen and (max-width:426px){
+    #fimages{
+        flex-direction: column-reverse;
+        align-items: center;
+    }   
+    #fRight{
+        justify-content: center;
+        height: 20rem;
+        width: 13rem;
+        margin-top: 4rem;
+    }
+    #fLeft{
+        width: 60%;
+    }
+    .fleftlm {
+        height: 50dvh;
+    }
+    .fleftlm h1 {
+        font-size: 1.8rem;
+    }
+    .fleftlm h2 {
+        font-size: 0.7rem;
+    }
+    #temp{
+        height: 180dvh;
+    }
+    #morecontent{
+        margin: 3rem 0 0 2rem;
+    }
+    .overlay h4 {
+        font-size: 1rem;
+    }
+    .overlay p {
+        font-size: 0.7rem;
+    }
 }
