@@ -12,7 +12,7 @@ body{
 }
 #nav{
     top:0;
-    height: 90px;
+    height: 6rem;
     width: 100%;
     text-transform: uppercase;
     display: flex;
@@ -28,8 +28,9 @@ body{
 }
 
 #nav img{
-    margin: 25px 0 0 42%;
-    height: 140px;
+    position: relative;
+    right: -35rem;
+    height: 8rem;
 }
 
 video{
@@ -58,7 +59,7 @@ video{
     
 }
 #page1 h1{
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 900;
     color: #FFCC00;
     position: relative;
@@ -74,12 +75,12 @@ video{
 }
 #page1 h3{
     font-weight: 900;
-    font-size: 25px;
+    font-size: 1.7rem;
     color: #FFCC00;
 }
 #page1 p{
     width: 50%;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
     color: WHITE;
 }
@@ -187,13 +188,14 @@ video{
     transform: scale(1.1);
   }
   .overlay h4{
-    font-size: 40px;
+    font-size: 2rem;
     text-transform: uppercase;
     color: black;
     
   }
   .overlay p{
     color: black;
+    font-weight: 600;
   }
 
 #page3{
@@ -218,13 +220,13 @@ video{
     font-weight: 800;
     text-transform: uppercase;
     color: Brown;
-    margin-left: 18%;
+    margin-left: 5rem;
 }
 
 #highlights p{
-    margin-top: 25px;
+    margin-top: 1.4rem;
     width: 45%;
-    margin-left: 20%;
+    margin-left: 6rem;
 }
 
 #highlight-video{
@@ -247,7 +249,7 @@ video{
 }
 #page4 #statement{
     width: 100%;
-    height: 35%;
+    height: 20rem;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -260,9 +262,9 @@ video{
     text-transform: uppercase;
     color: #FFCC00;
 }
-#page4 #statement p{
-    margin-top: 25px;
-    width: 70%;
+#page4 #statement p {
+    margin-top: 2rem;
+    width: 65rem;
     color: white;
 }
 #container{
@@ -277,19 +279,19 @@ video{
 #imageSlider{
     position: relative;
     overflow: hidden;
-    width: 45%;
-    height: 100%;
+    width: 33rem;
+    height: 20rem;
 }
 .slide{
-    height: 95%;
-    width: 100%;
+    height: 19rem;
+    width: 29rem;
     position: absolute;
     border-radius: 15px;
     transition: 1.3s;
 }
 .arrow{
     color: #FFCC00;
-    font-size: 65px;
+    font-size: 4.5rem;
     position: relative;
 }
 #content{
@@ -297,26 +299,26 @@ video{
 }
 #content h1{
     font-weight: 800;
-    font-size: 45px;
+    font-size: 3rem;
 }
 #content p{
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 #page5{
     height: 70dvh;
 }
 #endQuote{
-    margin-top: 3%;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 #text{
-    padding-top: 8%;
+    margin-top: 9rem;
     position: relative;
-    width: 40%;    
+    width: 40rem;    
 }
 
 #text p{
@@ -326,7 +328,7 @@ video{
 }
 
 #page5 img{
-    height: 40px;
+    height: 2.2rem;
 }
 
 #quote1{
@@ -347,13 +349,13 @@ video{
 }
 #footercontent{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 28dvh;
+    height: 10rem;
 }
-#footercontent img{
-    margin-top: 10px;
-    height: 250px;
+#flogo {
+    margin-top: 3rem;
+    height: 12rem;
 }
 #content1{
     margin-left: -4%;
@@ -367,10 +369,11 @@ video{
 }
 
 #content3 p{
-    margin: 0 0 0 40%;
+    display: flex;
+    justify-content: center;
 }
 
-@media only screen and (max-width:1602px){
+/* @media only screen and (width<1602px){
     #page1 h1{
         font-size: 100px;
     }
@@ -429,9 +432,9 @@ video{
     #text p {
         font-size: 22px;
     }
-}
+} */
 
-@media only screen and (max-width:1324px){
+/* @media only screen and (max-width:1324px){
     #page3 #HighlightContainer {
         flex-direction: column-reverse;
     }
@@ -441,4 +444,7 @@ video{
          margin-right: 0; 
          margin-bottom: 25px;
     }
+} */
+@media (min-width:576px){
+    
 }

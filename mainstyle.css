@@ -9,12 +9,11 @@ body{
 }
 #nav{
     top:0;
-    height: 90px;
+    height: 6rem;
     width: 100%;
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 50px;
     padding: 0 150px;
     position: fixed;
@@ -24,9 +23,11 @@ body{
     text-decoration: none;
     color: #3EB489;
 }
+
 #nav img{
-    margin: 25px 0 0 55%;
-    height: 140px;
+    position: relative;
+    right: -35rem;
+    height: 8rem;
 }
 #about{
     min-height: 36dvh;
@@ -37,13 +38,13 @@ body{
 }
 #footercontent{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 28dvh;
+    height: 10rem;
 }
-#footercontent img{
-    margin-top: 10px;
-    height: 250px;
+#flogo {
+    margin-top: 3rem;
+    height: 12rem;
 }
 #content1{
     margin-left: -4%;
@@ -58,4 +59,38 @@ body{
 
 #content3 p{
     margin: 0 0 0 40%;
+}
+
+@media only screen and (max-width:1024px){
+    #nav{
+        padding: 0 3rem;
+    }
+    #nav img {
+        right: -22rem;
+    }
+    #about{
+        height: 40dvh;
+        bottom: -9rem;
+    }
+    #flogo {
+        margin-top: 3rem;
+        height: 12rem;
+    }
+    #content2  img{
+        height: 15px;
+    }
+}
+@media only screen and (max-width:768px){
+    #nav img {
+        right: -8rem;
+    }
+
+    #fRight .images{
+        height: 80%;
+    }
+    #about{
+        height: 40dvh;
+        bottom: -9rem;
+    }
+
 }
