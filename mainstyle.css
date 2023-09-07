@@ -29,36 +29,69 @@ body{
     right: -35rem;
     height: 8rem;
 }
-#about{
-    min-height: 36dvh;
-    background-color: #000;
-    color: #FFCC00;
+footer{
+    bottom: -9.6rem;
     position: relative;
-    bottom: -153px;
 }
-#footercontent{
+footer .foot
+  {
+    background-color: #000000e1;
+    width: 98.5vmax;
+    height:27vmax;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 10rem;
-}
-#flogo {
-    margin-top: 3rem;
-    height: 12rem;
-}
-#content1{
-    margin-left: -4%;
-}
-#content2 a{
-    text-decoration: none;
-    color: #FFCC00;
-}
-#content2  img{
-    height: 15px;
-}
+    gap:3vw;
+  }
 
-#content3 p{
-    margin: 0 0 0 40%;
+  footer .foot .fimg
+  {
+    width:24vmax;
+    position: relative;
+    top:3.5vh;
+    margin-left: 3vw;
+   }
+  .fimg img
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .foot .content
+  {
+    margin-right: 9vmax;
+  }
+  .content .content1
+  {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    color: #fff;
+    font-size: 1.2vmax;
+  }
+  .content .content1 h1 
+  {
+    font-weight: 550;
+    letter-spacing: 2;
+  }
+  .reserved
+  {
+    width: 98.5vmax;
+    display: flex;
+    justify-content: center;
+    background-color: #000000e1;
+    color: #fff;
+    font-size:1.5vmax;
+  }
+  .content
+{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    gap: 5vw;
+    width: 100vmax;
+    margin-bottom: 2vmax;
 }
 
 @media only screen and (max-width:1024px){
@@ -68,17 +101,8 @@ body{
     #nav img {
         right: -22rem;
     }
-    #about{
-        height: 40dvh;
-        bottom: -9rem;
-    }
-    #flogo {
-        margin-top: 3rem;
-        height: 12rem;
-    }
-    #content2  img{
-        height: 15px;
-    }
+
+
 }
 @media only screen and (max-width:768px){
 
@@ -89,13 +113,59 @@ body{
     #fRight .images{
         height: 80%;
     }
+}
 
-    #content1 h3{
-        font-size: 1rem
-    }
-    #content3 p {
-        margin: 1rem 0 0px 15rem;
-    }
+@media (max-width:600px)
+{
+  .content
+  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4.5vh;
+  }
+  footer .foot
+  {
+      gap: 0;
+  }
+  footer .foot .fimg 
+  {
+      margin-left: 5vw;
+      margin-right: 1vmax;
+  }
+  .foot .content 
+  {
+      width: 70%;
+      margin-right: 1vmax
+  }
+
+  .content .content1
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-right: 0;
+      gap:3vh;
+      width: 100%;
+  }
+  .content .content2 
+  {
+      width: 100%;
+  }
+  .content .content2 .mid
+  {
+      margin-left: auto;
+  }
+  .content .content1 h2
+  {
+      width: 26%;
+  }
+  .content .content2 h2
+  {
+      width: 26%;
+  }
 }
 
 @media only screen and (max-width:426px){
@@ -106,23 +176,5 @@ body{
     #nav a{
         font-size: 0.6rem;
     }
-    #flogo{
-        height: 7rem;
-    }
-    #footercontent{
-        gap: 2rem;
-    }
-    #flogo{
-        margin-top: 0;
-    }
-    #content1 h3{
-        font-size: 0.7rem;
-    }
-    #content2 h3 {
-        font-size: 0.7rem;
-    }
-    #content3 p {
-        font-size: 0.8rem;
-        margin: 1rem 0 0px 6rem;
-    }
+
 }
