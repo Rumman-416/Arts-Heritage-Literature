@@ -41,6 +41,7 @@ html{
     text-align: center;
     height: 15%;
     width: 100%;
+    margin-top: 1rem;
 }
 #content h4{
     width: 60%;
@@ -149,6 +150,7 @@ html{
     border-radius: 20px;
     opacity: 0;
     transition: all ease 0.6s;
+    gap: 1rem;
   }
   .pg:hover .overlay{
     opacity: 1;
