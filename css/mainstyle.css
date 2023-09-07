@@ -49,10 +49,15 @@ footer .foot
     color: #fff;
     font-size: 1.2vmax;
   }
-  .content .content1 h1 
+  .content .content1 p
   {
-    font-weight: 550;
+    font-family: serif;
+  }
+  .content .content1 h2
+  {
+    font-weight: 500;
     letter-spacing: 2;
+    font-family: serif;
   }
   .reserved
   {

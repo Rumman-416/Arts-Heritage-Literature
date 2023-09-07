@@ -24,6 +24,7 @@ a{
     padding: 0 150px;
     position: fixed;
     z-index: 999;
+    background-color: white;
 }
 #nav a{
     text-decoration: none;
