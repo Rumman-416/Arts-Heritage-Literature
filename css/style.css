@@ -10,6 +10,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
 #nav{
     top:0;
     height: 3rem;
@@ -35,8 +36,8 @@ body{
 
 video{
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 100dvh;
+    width: 100dvw;
     object-fit: cover;
     position: fixed;
     z-index: -1;
@@ -47,7 +48,7 @@ video{
 }
 
 #page1{
-    height: 100dvh;
+    height: 130dvh;
     width: 100%;
     position: relative;
     display: flex;
@@ -59,6 +60,7 @@ video{
     gap: 1.5rem;
 }
 #page1 h1{
+    margin-top: 130px;
     font-size: 5rem;
     font-weight: 900;
     color: #FFCC00;
@@ -83,6 +85,21 @@ video{
     font-size: 1rem;
     text-align: center;
     color: WHITE;
+}
+#page1 .circle{
+    height: 150px;
+    width: 150px;
+    /* background-color: transparent; */
+    border: 4px solid #FFCC00;
+    position: relative;
+    left: -40%;
+    top: -4%;
+    border-radius: 50%;
+    z-index: 15;
+}
+ .circle:hover{
+    transition: 0.7s;
+    background-color: #FFCC00;
 }
 #page2{
     min-height: 100dvh;
@@ -144,7 +161,7 @@ video{
     gap: 70px;
     position: relative;
     z-index: 10;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 #cardContainer .card{
     background-color: #FFCC00;
@@ -158,13 +175,13 @@ video{
 }
 
 .card1{
-    background-image: url(images/card1.png);
+    background-image: url(../images/card1.png);
 }
 .card2{
-    background-image: url(images/card2.jfif);
+    background-image: url(../images/card2.jfif);
 }
 .card3{
-    background-image: url(images/card3.jpg);
+    background-image: url(../images/card3.jpg);
 }
 
 .overlay{
@@ -237,6 +254,7 @@ video{
 }
 #highlight-video video{
     width: 100%;
+    height: 100%;
     z-index: 10;
     position: relative;
     border-radius: 15px;
@@ -257,6 +275,7 @@ video{
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 #page4 #statement h1{
     font-weight: 800;
@@ -265,7 +284,7 @@ video{
 }
 #page4 #statement p {
     margin-top: 2rem;
-    width: 54rem;
+    width: 90%;
     color: white;
 }
 #container{
@@ -348,37 +367,7 @@ video{
     top: 120px;
     rotate: 180deg;
 }
-/* #about{
-    min-height: 36dvh;
-    background-color: #000;
-    color: #FFCC00;
-    position: relative;
-}
-#footercontent{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10rem;
-}
-#flogo {
-    margin-top: 3rem;
-    height: 12rem;
-}
-#content1{
-    margin-left: -4%;
-}
-#content2 a{
-    text-decoration: none;
-    color: #FFCC00;
-}
-#content2  img{
-    height: 15px;
-}
 
-#content3 p{
-    display: flex;
-    justify-content: center;
-} */
 footer{
     position: relative;
 }
@@ -447,78 +436,96 @@ footer .foot
     width: 100vmax;
     margin-bottom: 2vmax;
 }
-/* @media only screen and (width<1602px){
-    #page1 h1{
-        font-size: 100px;
-    }
-    #page1 h3{
-        font-size: 40px;
-    }
-    #page1 p{
-        width: 70%;
-        font-size: 25px;
-    }
-    .overlay h4{
-        font-size: 55px;
-    }
-    .overlay p{
-        font-size: 25px;
-    }
-    #page4 #statement h1 {
-        font-size: 40px;
-    }
-    #page4 #statement p {
-        font-size: 26px;
-    }
-    #container{
-        flex-direction: column;
-        height: 100%;
-    }
-    .arrowLeft{
-        left: -30%;
-        top: 35%;
-        font-size: 100px;
-    }
-    .arrowRight{
-        right: -30%;
-        bottom: 30%;
-        font-size: 100px;
-    }
-    #content{
-        text-align: center;
-    }
-    #content p{
-        font-size: 20px;
-    }
-    #page5{
-        height: 40dvh;
-    }
-    #highlights h1{
-        font-size: 50px;
-        width: 100%;
-        margin-left:0;
-    }
-    #highlights p{
-        font-size: 27px;
-        width: 90%;
-        margin-left: 3%;
-    }
-    #text p {
-        font-size: 22px;
-    }
-} */
 
-/* @media only screen and (max-width:1324px){
+/* @media only screen and (max-width:769px){
+    #main{
+        width: 103dvw;
+    }
+    video{
+        width: 103dvw;
+    }
+}
+
+
+@media only screen and (max-width:426px){
+    #main{
+        width: 116dvw;
+    }
+    video{
+        width: 116dvw;
+    }
+    #page1 h1 {
+        font-size: 2rem;
+    }
+    #page1 h3 {
+        font-size: 1rem;
+    }
+    #page1 p {
+        font-size: 0.8rem;
+    }
+    #scroller h4 {
+        font-size: 60px;
+        font-weight: 100;
+    }
+    #cardContainer {
+        height: 100dvh;
+        flex-direction: column;
+    }
+    #cardContainer .card {
+        width: 90%;
+    }
+    .overlay h4 {
+        font-size: 25px;
+        position: relative;
+        top: 16px;
+    }
+    .overlay p {
+        font-size: 12px;
+    }
+    #content h1 {
+        font-size: 2rem;
+    }
     #page3 #HighlightContainer {
-        flex-direction: column-reverse;
+        height: 150dvh;
     }
     #highlight-video {
-        width: 38%;
-        height: 50dvh;
-         margin-right: 0; 
-         margin-bottom: 25px;
+        width: 60%;
     }
-} */
-@media (min-width:576px){
-    
+    #page5 img {
+        right: 94px;
+    }
+    footer .foot{
+        width: 58dvh;
+    }
+    .reserved
+    {
+        width: 58dvh;
+    }
+    #main ::-webkit-scrollbar{
+        display: none;
+    }
 }
+
+@media only screen and (max-width:376px){
+    #main{
+        width: 123.18dvw;
+    }
+    video{
+        width: 123.18dvw;
+    }
+}
+
+
+@media only screen and (max-width:321px){
+    #main{
+        width: 100dvw;
+    }
+    #page1{
+        padding-top: 2rem;
+    }
+    video{
+        width: 100dvw;
+        height: 147dvh;
+    }
+    
+} */

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth ;
+}
+#mainbody{
+    width: 100%;
+    position: relative;
+}
+
+#contenthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40dvh;
+    gap: 2.5%;
+}
+
+ #contenthead h1{
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #3EB489;
+    font-size: 8dvw;
+    text-transform: uppercase;
+    font-family: monospace;   
+}
+ #contenthead h1:hover {
+    color: #3EB489;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    width: 100%;
+    margin-top: 1rem;
+}
+#content h4{
+    width: 60%;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100dvh;
+    /* top: 15dvw; */
+}
+#fimages{
+    display: flex;
+    margin-top: 10%;
+    height: 100dvh;
+    width:80%;
+    justify-content:space-around;
+    position: relative;
+    /* border: 2px solid red; */
+}
+#fLeft{
+    overflow: hidden;
+    width: 40%;
+    height: inherit;
+}
+.fleftlm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.fleftlm h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+    color: #3EB489;
+}
+.fleftlm h2{
+    font-size: 2vw;
+    font-weight: 400;
+    
+}
+#fRight{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5dvh;
+}
+#fRight .images{
+    width: 80%;
+    height: 90%;
+    object-fit:fill;
+}
+
+#temp{
+    height: 300dvh;
+}
+#morecontent{
+    margin:70px 0 0 15%;
+    text-transform: uppercase;
+    color: #3EB489;
+}
+#endpg{
+    height: 35dvh;
+    /* background-color: #3EB489; */
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+#endpg .pg{
+    background-color: #3EB489;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#leftp{
+    background-image: url(../images/ar1.jpg);
+}
+#rightp{
+    background-image: url(../images/card2.jfif);
+}
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #3EB489;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    gap: 1rem;
+  }
+  .pg:hover .overlay{
+    opacity: 1;
+  }
+
+  .pg:hover{
+    transform: scale(1.1);
+  }
+  .overlay h4{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+    
+  }
+  .overlay p{
+    color: black;
+  }
+
+  @media only screen and (max-width:768px){
+
+    #fRight .images{
+        height: 80%;
+    }
+    #morecontent{
+        margin: 0 0 0 4rem;
+    }
+    #endpg .pg {
+        height: 14rem;
+        width: 18rem;
+    }
+    #leftp{
+        position: relative;
+        left: 3rem;
+    }
+    #rightp{
+        position: relative;
+        right: 3rem;
+    }
+
+}
+@media only screen and (max-width:426px){
+    #fimages{
+        flex-direction: column-reverse;
+        align-items: center;
+    }   
+    #fRight{
+        justify-content: center;
+        height: 20rem;
+        width: 13rem;
+        margin-top: 4rem;
+    }
+    #fLeft{
+        width: 60%;
+    }
+    .fleftlm {
+        height: 50dvh;
+    }
+    .fleftlm h1 {
+        font-size: 1.8rem;
+    }
+    .fleftlm h2 {
+        font-size: 0.7rem;
+    }
+    #temp{
+        height: 180dvh;
+    }
+    #morecontent{
+        margin: 3rem 0 0 2rem;
+    }
+    .overlay h4 {
+        font-size: 1rem;
+    }
+    .overlay p {
+        font-size: 0.7rem;
+    }
+}
