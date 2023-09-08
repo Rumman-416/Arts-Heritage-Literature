@@ -15,7 +15,7 @@ a{
 }
 #nav{
     top:0;
-    height: 6rem;
+    height: 80px;
     width: 100%;
     text-transform: uppercase;
     display: flex;
@@ -24,7 +24,7 @@ a{
     padding: 0 150px;
     position: fixed;
     z-index: 999;
-    background-color: white;
+    /* background-color: white; */
 }
 #nav a{
     text-decoration: none;
@@ -41,14 +41,27 @@ a{
     position: relative;
 }
 
-#contenthead{
+#contenthead {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40dvh;
+    margin-top: -17dvh;
     gap: 2.5%;
 }
-
+.bgimg {
+    height: 376px;
+    opacity: 0.5;
+    position: relative;
+    top: 132px;
+    left: -75px;
+}
+.dgimg {
+    height: 314px;
+    opacity: 0.5;
+    position: relative;
+    top: 78px;
+    left: 632px;
+}
  #contenthead h1{
     font-weight: 700;
     color: transparent;
