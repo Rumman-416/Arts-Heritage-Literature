@@ -18,15 +18,15 @@ a{
 #nav{
     top:0;
     height: 80px;
-    width: 100%;
+    width: 100vmax;
     text-transform: uppercase;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 50px;
-    padding: 0 150px;
+    /* padding: 0 92px; */
     position: fixed;
     z-index: 999;
-    /* background-color: white; */
 }
 #nav a{
     text-decoration: none;
@@ -35,7 +35,7 @@ a{
 
 #nav img{
     position: relative;
-    right: -35rem;
+    right: 70rem;
     height: 8rem;
 }
 #mainbody{

@@ -28,7 +28,7 @@ a{
 }
 #nav a{
     text-decoration: none;
-    color: #3EB489;
+    color: #FF7F50;
 }
 
 #nav img{
@@ -50,14 +50,14 @@ a{
 }
 .bgimg {
     height: 376px;
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
     top: 132px;
     left: -75px;
 }
 .dgimg {
     height: 314px;
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
     top: 78px;
     left: 632px;
@@ -65,13 +65,13 @@ a{
  #contenthead h1{
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px #3EB489;
-    font-size: 8dvw;
+    -webkit-text-stroke: 2px #FF7F50;
+    font-size: 7dvw;
     text-transform: uppercase;
     font-family: monospace;   
 }
  #contenthead h1:hover {
-    color: #3EB489;
+    color: #FF7F50;
 }
 #content{
     display: flex;
@@ -121,7 +121,7 @@ a{
     font-weight: 400;
     text-transform: capitalize;
     margin: 1.5vw 0;
-    color: #3EB489;
+    color: #FF7F50;
 }
 .fleftlm h2{
     font-size: 2vw;
@@ -148,11 +148,11 @@ a{
 #morecontent{
     margin:70px 0 0 15%;
     text-transform: uppercase;
-    color: #3EB489;
+    color: #FF7F50;
 }
 #endpg{
     height: 35dvh;
-    /* background-color: #3EB489; */
+    /* background-color: #FF7F50; */
     width: 100%;
     display: flex;
     justify-content:center;
@@ -164,7 +164,7 @@ a{
 }
 
 #endpg .pg{
-    background-color: #3EB489;
+    background-color: #FF7F50;
     width: 350px;
     height: 250px;
     border-radius: 20px;
@@ -182,7 +182,7 @@ a{
     position: relative;
     height: 100%;
     width: 100%;
-    background: #3EB489;
+    background: #FF7F50;
     text-align: center;
     display: flex;
     flex-direction: column;
