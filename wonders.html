@@ -5,25 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wondersofindia</title>
-    <link rel="shortcut icon" href="images/logoy.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/wonders.css">
-    
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/wonders.css">  
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navigation">
-        <div class="nav-list">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        </ul>
-        </div>
-        <div class="nav-logo">
-            <img src="images/logoy.png" alt="">
-        </div>
-    </div>
-    </nav>
+    <div id="nav">
+        <a href="index.html" class="magnet">Home</a>
+        <a href="#smain" class="magnet">Content</a>
+        <a href="#about" class="magnet">About</a>
+        <img src="images/logoy.png" alt="" class="magnet">
+</div>
     <div class="head">
         <div class="headline">
             <p class="line">In essence, India's diverse cultures, rich history, and remarkable achievements weave
@@ -32,9 +23,15 @@
                 explore its depths and embrace its multifaceted allure </p>
         </div>
         <h1>Wonders Of India</h1>
-        <div class="himg">
-            <img src="https://learn.podium.school/wp-content/uploads/2022/02/d8d34fe14bde30365acdea634caf7411-1.jpg" alt="">
+        <div class="headline">
+            <p class="line">In essence, India's diverse cultures, rich history, and remarkable achievements weave
+                together a narrative that continues to captivate the world's imagination. Its wonders, both monumental
+                and intangible, form an intricate mosaic that beckons travelers, scholars, and seekers of inspiration to
+                explore its depths and embrace its multifaceted allure </p>
         </div>
+        <!-- <div class="himg">
+            <img src="https://learn.podium.school/wp-content/uploads/2022/02/d8d34fe14bde30365acdea634caf7411-1.jpg" alt="">
+        </div> -->
     </div>
 
     <div class="intro">
@@ -44,7 +41,7 @@
     </div>
 
     <div class="content-body">
-        <div class="content">
+        <div class="content" id="smain">
             <div class="w-img">
                 <img src="https://images.unsplash.com/photo-1567255097545-018d2b9c414c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                     alt="">
@@ -166,7 +163,7 @@
             <div class=fimg>
                 <img src="images/logoy.png" alt="">
             </div>
-            <div class="content">
+            <div class="fcontent">
             <div class="content1">
                 <h2>Welcome to Artistic Creations</h2>
                 <p>At Artistic Creations, we are<br> passionate about bringing <br> creativity to life. </p>
@@ -193,7 +190,9 @@
             <p>2023 © Artistic-Creations. ALL Rights Reserved.</p>
         </div>
     </footer>
+    <script src="js/artscript.js"></script>
     <script src="js/wonders.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
