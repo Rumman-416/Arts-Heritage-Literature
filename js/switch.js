@@ -10,6 +10,7 @@ function heritage(){
 function wonders(){
     window.location.href = '../wonder.html';
 }
+
 document.querySelector('.card1').onclick = arts;
 document.querySelector('.card2').onclick = heritage;
 document.querySelector('.card3').onclick = culture;

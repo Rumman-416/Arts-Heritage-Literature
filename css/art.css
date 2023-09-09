@@ -173,7 +173,7 @@ a{
     overflow: hidden;
 }
 #leftp{
-    background-image: url(../images/ar1.jpg);
+    background-image: url(../images/card3.avif);
 }
 #rightp{
     background-image: url(../images/card2.jfif);
@@ -207,6 +207,8 @@ a{
   }
   .overlay p{
     color: black;
+    width: 90%;
+    margin-left: 5%;
   }
 
   @media only screen and (max-width:768px){

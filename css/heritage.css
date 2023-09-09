@@ -179,7 +179,7 @@ a{
     background-image: url(../images/card1.png);
 }
 #rightp{
-    background-image: url(../images/ar1.jpg);
+    background-image: url(../images/card3.avif);
 }
 .overlay{
     position: relative;
@@ -210,6 +210,8 @@ a{
   }
   .overlay p{
     color: black;
+    width: 90%;
+    margin-left: 5%;
   }
 
   /* @media only screen and (max-width:768px){

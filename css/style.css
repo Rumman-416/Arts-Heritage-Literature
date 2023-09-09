@@ -159,6 +159,7 @@ video{
     background-position: center;
     overflow: hidden;
     transition: transform 1.2s ; 
+    cursor: pointer;
 }
 
 .card1{
@@ -168,7 +169,7 @@ video{
     background-image: url(../images/card2.jfif);
 }
 .card3{
-    background-image: url(../images/card3.jpg);
+    background-image: url(../images/card3.avif);
 }
 
 .overlay{
