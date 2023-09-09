@@ -1,4 +1,4 @@
-//git push --set-upstream origin master
+
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
 
@@ -7,7 +7,6 @@ gsap.to("#main",{
     scrollTrigger:{
         trigger:"#main",
         scroller:"body",
-        //markers:"true",
         start:"top -20%",
         end:"top -70%",
         scrub:2
@@ -20,7 +19,6 @@ gsap.from("#quote1",{
     scrollTrigger:{
         trigger:"#quote1",
         scroller:"body",
-        //markers:true,
         start:"top 35%",
         end:"top 55%",
         scrub:3
@@ -33,7 +31,6 @@ gsap.from("#quote2",{
     scrollTrigger:{
         trigger:"#quote2",
         scroller:"body",
-        //markers:true,
         start:"top 75%",
         end:"top 85%",
         scrub:3
